@@ -1,0 +1,13 @@
+Package: CLPFUDatabase
+Title: A Metapackage For the CL-PFU Database
+Version: 0.0.0.9000
+Authors@R: 
+    person("Matthew", "heun", , "matthew.heun@me.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7438-214X"))
+Description: To assist building the CL-PFU database, 
+             this metapackage provides a convenient way
+             to install all dependencies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

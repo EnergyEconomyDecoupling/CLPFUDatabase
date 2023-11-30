@@ -20,10 +20,10 @@ Imports:
   matsindf,
   RCLabels
 Remotes:
-  EnergyEconomyDecoupling/MWTools,
-  EnergyEconomyDecoupling/PFUAggDatabase,
-  EnergyEconomyDecoupling/PFUDatabase,
-  EnergyEconomyDecoupling/PFUPipelineTools,
-  EnergyEconomyDecoupling/PFUSetup
-  MatthewHeun/IEATools,
-  MatthewHeun/Recca
+  github::EnergyEconomyDecoupling/MWTools,
+  github::EnergyEconomyDecoupling/PFUAggDatabase,
+  github::EnergyEconomyDecoupling/PFUDatabase,
+  github::EnergyEconomyDecoupling/PFUPipelineTools,
+  github::EnergyEconomyDecoupling/PFUSetup
+  github::MatthewHeun/IEATools,
+  github::MatthewHeun/Recca

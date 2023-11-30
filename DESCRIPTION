@@ -2,7 +2,7 @@ Package: CLPFUDatabase
 Title: A Metapackage For the CL-PFU Database
 Version: 0.0.0.9000
 Authors@R: 
-    person("Matthew", "heun", , "matthew.heun@me.com", role = c("aut", "cre"),
+    person("Matthew", "Heun", , "matthew.heun@me.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7438-214X"))
 Description: To assist building the CL-PFU database, 
              this metapackage provides a convenient way
@@ -16,4 +16,14 @@ Suggests:
 Language: en-US
 Config/testthat/edition: 3
 Imports:
+  matsbyname,
+  matsindf,
   RCLabels
+Remotes:
+  EnergyEconomyDecoupling/MWTools,
+  EnergyEconomyDecoupling/PFUAggDatabase,
+  EnergyEconomyDecoupling/PFUDatabase,
+  EnergyEconomyDecoupling/PFUPipelineTools,
+  EnergyEconomyDecoupling/PFUSetup
+  MatthewHeun/IEATools,
+  MatthewHeun/Recca

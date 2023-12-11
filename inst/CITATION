@@ -1,11 +1,18 @@
 bibentry(
-  bibtype  = "Manual",
-  title    = "CLPFUDatabase: Easily Install and Load Packages to Construct the CL-PFU Database",
-  author   = person(given = "Matthew Kuperus",
+  header      = "To cite package ‘CLPFUDatabase’ in publications use:",
+  bibtype     = "Manual",
+  title       = "{CLPFUDatabase}: Easily Install and Load Packages to Construct the CL-PFU Database",
+  author      = person(given = "Matthew Kuperus",
                        family = "Heun",
                        email = "matthew.heun@me.com",
                        role = c("aut", "cre"),
                        comment = c(ORCID = "0000-0002-7438-214X")),
-  year     = 2023,
-  doi      = "**** TBD ****"
+  year        = "2023",
+  note        = "R package version 0.1.1",
+  url         = "https://doi.org/10.5281/zenodo.TBD",
+  doi         = **** TBD ****,
+  textVersion = paste("Matthew Kuperus Heun (2023).",
+                      "{CLPFUDatabase}: Easily Install and Load Packages to Construct the CL-PFU Database",
+                      "R package version 0.1.1",
+                      "https://doi.org/10.5281/zenodo.TBD")
 )

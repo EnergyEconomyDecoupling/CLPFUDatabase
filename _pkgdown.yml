@@ -1,4 +1,5 @@
+url: https://energyeconomydecoupling.github.io/CLPFUDatabase/
 template:
   bootstrap: 5
-  bootswatch: sandstone
+  bootswatch: simplex
 

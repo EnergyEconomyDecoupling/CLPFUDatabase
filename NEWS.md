@@ -4,10 +4,11 @@ output: html_document
 ---
 
 
-Cite all releases with doi **** TBD ****, 
+Cite all releases with doi 10.5281/zenodo.10359832, 
 which always resolves to the latest release.
 
-# CLPFUDatabase 0.1.1 (2023-12-11)
+# CLPFUDatabase 0.1.1 (2023-12-11) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10359833.svg)](https://doi.org/10.5281/zenodo.10359833)
+
 
 * Added dependencies.
 * Added contributing guidelines and code of conduct.

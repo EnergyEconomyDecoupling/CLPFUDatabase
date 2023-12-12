@@ -20,11 +20,11 @@ Imports:
   matsindf (>= 0.4.6),
   RCLabels (>= 0.1.8)
 Remotes:
-  EnergyEconomyDecoupling/MWTools,
-  EnergyEconomyDecoupling/PFUAggDatabase,
-  EnergyEconomyDecoupling/PFUDatabase,
-  EnergyEconomyDecoupling/PFUPipelineTools,
-  EnergyEconomyDecoupling/PFUSetup,
-  MatthewHeun/IEATools,
-  MatthewHeun/Recca
+  github::EnergyEconomyDecoupling/MWTools,
+  github::EnergyEconomyDecoupling/PFUAggDatabase,
+  github::EnergyEconomyDecoupling/PFUDatabase,
+  github::EnergyEconomyDecoupling/PFUPipelineTools,
+  github::EnergyEconomyDecoupling/PFUSetup,
+  github::MatthewHeun/IEATools,
+  github::MatthewHeun/Recca
 URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

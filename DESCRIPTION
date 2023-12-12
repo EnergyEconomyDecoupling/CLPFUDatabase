@@ -24,7 +24,7 @@ Remotes:
   EnergyEconomyDecoupling/PFUAggDatabase,
   EnergyEconomyDecoupling/PFUDatabase,
   EnergyEconomyDecoupling/PFUPipelineTools,
-  EnergyEconomyDecoupling/PFUSetup
+  EnergyEconomyDecoupling/PFUSetup,
   MatthewHeun/IEATools,
   MatthewHeun/Recca
 URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

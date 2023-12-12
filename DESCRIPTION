@@ -16,9 +16,16 @@ Suggests:
 Language: en-US
 Config/testthat/edition: 3
 Imports:
+  IEATools, 
+  MWTools, 
   matsbyname (>=  0.6.7),
   matsindf (>= 0.4.6),
-  RCLabels (>= 0.1.8)
+  PFUAggDatabase,
+  PFUDatabase,
+  PFUPipelineTools,
+  PFUSetup,
+  RCLabels (>= 0.1.8), 
+  Recca
 Remotes:
   github::EnergyEconomyDecoupling/MWTools,
   github::EnergyEconomyDecoupling/PFUAggDatabase,

@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: references.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit Readme.Rmd. -->
@@ -14,7 +15,10 @@ knitr::opts_chunk$set(
 ```
 
 
-# CLPFUDatabase
+<!-- Define some macros for later use -->
+[link-iea]:              https://www.iea.org
+[link-ieaeweb]:          https://www.iea.org/data-and-statistics/data-product/world-energy-balances
+
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml)
@@ -22,9 +26,53 @@ knitr::opts_chunk$set(
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-`CLPFUDatabase` is a metapackage[^1] that enables 
-quick and convenient installation of all dependencies
-for constructing the CL-PFU database.
+
+# CLPFUDatabase
+
+## Statement of need
+
+Historically, societal exergy analysis (SEA) practitioners have
+analyzed the energy conversion chains (ECCs)
+of individual countries using linked spreadsheets,
+often starting with primary- and final-stage data 
+from the [International Energy Agency][link-iea]'s (IEA's)
+[extended world energy balances][link-ieaeweb] (EWEBs)
+[@Ayres:2003ec; @Serrenho:2014aa; @Brockway:2014aa; @Brockway:2015aa]. 
+Data were stored in varying and inconsistent formats.
+An early SEA database [@De-Stercke:2014]
+estimated energy efficiencies 
+of end-use machines using the economic status of countries,
+thereby precluding use in energy-economy studies.
+
+Researchers in the field
+wanted to expand SEA to cover all countries, but
+the spreadsheet approach to SEA was
+deemed not scalable.
+A new approach to SEA was needed, 
+one that scaled across all countries 
+for many years without relying on economic data
+to estimate machine efficiencies. 
+
+To address that need,
+we created a suite of `R` packages 
+to support the creation and use of the CL-PFU database.
+But creating the CL-PFU database involves 
+more than 10 `R` packages and
+much input data.
+With so many `R` packages involved, 
+a way to streamline the installation of packages was needed,
+such that a single `install.packages()` would
+ensure that all dependencies are available.
+
+This package (`CLPFUDatbase`) addresses the need for a simple 
+way to install all dependencies.
+`CLPFUDatbase` is 
+metapackage^[A metapackage with which many `R` programmers 
+             will be familiar is [tidyverse](https://www.tidyverse.org).], 
+whose dependencies include all packages required to make
+the CL-PFU database. 
+Installation of `CLPFUDatabase` triggers 
+installation of all dependencies for the CL-PFU database.
 
 
 ## Installation
@@ -38,5 +86,4 @@ devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
 ```
 
 
-[^1]: A metapackage with which many `R` programmers will be familiar
-      is [tidyverse](https://www.tidyverse.org).
+## References

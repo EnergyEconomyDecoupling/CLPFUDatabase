@@ -35,4 +35,5 @@ Remotes:
   github::EnergyEconomyDecoupling/PFUSetup,
   github::EnergyEconomyDecoupling/PFUPipelineTools,
   github::EnergyEconomyDecoupling/PFUDatabase,
-  github::EnergyEconomyDecoupling/PFUAggDatabaseURL: https://energyeconomydecoupling.github.io/CLPFUDatabase/
+  github::EnergyEconomyDecoupling/PFUAggDatabase
+URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

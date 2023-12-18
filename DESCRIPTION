@@ -16,24 +16,23 @@ Suggests:
 Language: en-US
 Config/testthat/edition: 3
 Imports:
-  IEATools, 
-  MWTools, 
+  RCLabels, 
   matsbyname,
   matsindf,
   MKHthemes,
-  PFUAggDatabase,
-  PFUDatabase,
-  PFUPipelineTools,
+  MWTools, 
+  IEATools, 
+  Recca,
   PFUSetup,
-  RCLabels, 
-  Recca
+  PFUPipelineTools,
+  PFUDatabase,
+  PFUAggDatabase,
 Remotes:
-  github::EnergyEconomyDecoupling/MWTools,
-  github::EnergyEconomyDecoupling/PFUAggDatabase,
-  github::EnergyEconomyDecoupling/PFUDatabase,
-  github::EnergyEconomyDecoupling/PFUPipelineTools,
-  github::EnergyEconomyDecoupling/PFUSetup,
-  github::MatthewHeun/IEATools,
   github::MatthewHeun/MKHthemes,
-  github::MatthewHeun/Recca
-URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/
+  github::EnergyEconomyDecoupling/MWTools,
+  github::MatthewHeun/IEATools,
+  github::MatthewHeun/Recca,
+  github::EnergyEconomyDecoupling/PFUSetup,
+  github::EnergyEconomyDecoupling/PFUPipelineTools,
+  github::EnergyEconomyDecoupling/PFUDatabase,
+  github::EnergyEconomyDecoupling/PFUAggDatabaseURL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

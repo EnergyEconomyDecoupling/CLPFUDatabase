@@ -24,11 +24,13 @@ Imports:
   PFUSetup,
   PFUPipelineTools,
   PFUDatabase,
-  PFUAggDatabase,
+  PFUAggDatabase
 Suggests: 
   devtools,
+  magrittr,
   spelling,
-  testthat (>= 3.0.0)
+  testthat (>= 3.0.0), 
+  yaml
 Remotes:
   github::MatthewHeun/MKHthemes,
   github::EnergyEconomyDecoupling/MWTools,

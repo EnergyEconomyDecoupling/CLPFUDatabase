@@ -45,6 +45,45 @@ dependencies include all packages required to make the CL-PFU database.
 Installation of `CLPFUDatabase` triggers installation of all
 dependencies for the CL-PFU database.
 
+## Dependencies
+
+The following packages are dependencies of `CLPFUDatabase`:
+
+| Package name     | Host   | Organization            |
+|:-----------------|:-------|:------------------------|
+| RCLabels         | CRAN   | NA                      |
+| matsbyname       | CRAN   | NA                      |
+| matsindf         | CRAN   | NA                      |
+| MKHthemes        | GitHub | MatthewHeun             |
+| MWTools          | GitHub | EnergyEconomyDecoupling |
+| IEATools         | GitHub | MatthewHeun             |
+| Recca            | GitHub | MatthewHeun             |
+| PFUSetup         | GitHub | EnergyEconomyDecoupling |
+| PFUPipelineTools | GitHub | EnergyEconomyDecoupling |
+| PFUDatabase      | GitHub | EnergyEconomyDecoupling |
+| PFUAggDatabase   | GitHub | EnergyEconomyDecoupling |
+
+Packages hosted on `CRAN` can be updated in the “Packages” tab of
+RStudio. Users will need to occasionally update packages hosted in
+GitHub with the following code.
+
+``` r
+# Get the table
+# Filter to GitHub only
+# Eliminate Host column
+# Change order of columns
+# Transpose 
+# Convert to code
+# cat the result
+```
+
+``` r
+remote_pkgs <- description |> 
+  magrittr::extract("Remotes")
+```
+
+and may need to be updated occasionally by the following commands.
+
 ## Installation
 
 You can install `CLPFUDatabase` and all its dependencies from
@@ -54,6 +93,8 @@ You can install `CLPFUDatabase` and all its dependencies from
 # install.packages("devtools")
 devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
 ```
+
+## Updates
 
 ## References
 

@@ -74,15 +74,89 @@ Installation of `CLPFUDatabase` triggers
 installation of all dependencies for the CL-PFU database.
 
 
+## Dependencies
+
+The following packages are dependencies of `CLPFUDatabase`:
+
+```{r, echo=FALSE, results='asis'}
+description <- yaml::read_yaml("DESCRIPTION")
+pkg_table <- description |> 
+  magrittr::extract2("Imports") |> 
+  strsplit(split = ", ") |> 
+  data.frame() |> 
+  magrittr::set_names("Package name")
+
+# Create a data frame of remotes
+remotes <- description |> 
+  magrittr::extract2("Remotes") |> 
+  strsplit(split = ", ") |> 
+  lapply(FUN = strsplit, split = "::|/") |> 
+  unlist(recursive = FALSE) |> 
+  lapply(FUN = as.list) |> 
+  purrr::transpose() |> 
+  magrittr::set_names(c("Host", "Organization", "Package name")) |> 
+  lapply(FUN = unlist) |> 
+  tibble::as_tibble() |> 
+  dplyr::mutate(
+    Host = dplyr::case_when(
+      Host == "github" ~ "GitHub", 
+      TRUE ~ Host
+    )
+  )
+
+# Join the two data frames
+dependency_table <- dplyr::left_join(pkg_table, remotes, by = "Package name") |> 
+  dplyr::mutate(
+    Host = dplyr::case_when(
+      is.na(Host) ~ "CRAN", 
+      TRUE ~ Host
+    )
+  )
+
+# Display the table as markdown
+knitr::kable(dependency_table)
+```
+
+Packages hosted on `CRAN` can be updated in the "Packages" tab of RStudio.
+Users will need to occasionally update packages hosted in GitHub with the following code.
+
+```{r}
+# Get the table
+# Filter to GitHub only
+# Eliminate Host column
+# Change order of columns
+# Transpose 
+# Convert to code
+# cat the result
+```
+
+
+
+```{r}
+remote_pkgs <- description |> 
+  magrittr::extract("Remotes")
+
+```
+
+and may need to be updated occasionally
+by the following commands. 
+
+
+
+
 ## Installation
 
 You can install `CLPFUDatabase` and all its dependencies
 from [GitHub](https://github.com/) with:
 
-``` r
+```{r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
 ```
+
+
+## Updates
+
 
 
 ## References

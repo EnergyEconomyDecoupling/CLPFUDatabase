@@ -103,5 +103,5 @@ EU (European Union)-15 Countries from 1960 to 2009.” *Energy* 76
 
 </div>
 
-[^1]: A metapackage with which many `R` programmers will be familiar is
-    [tidyverse](https://www.tidyverse.org).
+[^1]: [tidyverse](https://www.tidyverse.org) is another metapackage with
+    which many `R` programmers are familiar.

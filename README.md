@@ -34,10 +34,10 @@ efficiencies.
 
 To address that need, we created a suite of `R` packages to support the
 creation and use of the CL-PFU database. But creating the CL-PFU
-database involves more than 10 `R` packages and much input data. With so
-many `R` packages involved, a way to streamline the installation of
-packages was needed, such that a single `install.packages()` would
-ensure that all dependencies are available.
+database involves several `R` packages and much input data. A way to
+streamline the installation of packages was needed, such that a single
+`install.packages()` call would ensure that all dependencies are
+available.
 
 This package (`CLPFUDatbase`) addresses the need for a simple way to
 install all dependencies. `CLPFUDatbase` is metapackage[^1], whose

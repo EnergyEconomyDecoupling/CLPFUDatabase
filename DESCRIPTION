@@ -18,13 +18,14 @@ Config/testthat/edition: 3
 Imports:
   IEATools, 
   MWTools, 
-  matsbyname (>=  0.6.7),
-  matsindf (>= 0.4.6),
+  matsbyname,
+  matsindf,
+  MKHthemes,
   PFUAggDatabase,
   PFUDatabase,
   PFUPipelineTools,
   PFUSetup,
-  RCLabels (>= 0.1.8), 
+  RCLabels, 
   Recca
 Remotes:
   github::EnergyEconomyDecoupling/MWTools,
@@ -33,5 +34,6 @@ Remotes:
   github::EnergyEconomyDecoupling/PFUPipelineTools,
   github::EnergyEconomyDecoupling/PFUSetup,
   github::MatthewHeun/IEATools,
+  github::MatthewHeun/MKHthemes,
   github::MatthewHeun/Recca
 URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

@@ -57,12 +57,18 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
+  <main id="main" class="col-md-9">
+<div class="section level1">
 <div class="page-header"><h1 id="clpfudatabase">CLPFUDatabase<a class="anchor" aria-label="anchor" href="#clpfudatabase"></a>
 </h1></div>
-<!-- badges: start -->
-
-<p><code>CLPFUDatabase</code> is a metapackage<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;A metapackage with which many &lt;code&gt;R&lt;/code&gt; programmers will be familiar is &lt;a href="https://www.tidyverse.org" class="external-link"&gt;tidyverse&lt;/a&gt;.&lt;/p&gt;'><sup>1</sup></a> that enables quick and convenient installation of all dependencies for constructing the CL-PFU database.</p>
+<div class="section level2">
+<h2 id="statement-of-need">Statement of need<a class="anchor" aria-label="anchor" href="#statement-of-need"></a>
+</h2>
+<p>Historically, societal exergy analysis (SEA) practitioners have analyzed the energy conversion chains (ECCs) of individual countries using linked spreadsheets, often starting with primary- and final-stage data from the <a href="https://www.iea.org" class="external-link">International Energy Agency</a>’s (IEA’s) <a href="https://www.iea.org/data-and-statistics/data-product/world-energy-balances" class="external-link">extended world energy balances</a> (EWEBs) (Ayres, Ayres, and Warr 2003; Serrenho et al. 2014; Brockway et al. 2014, 2015). Data were stored in varying and inconsistent formats. An early SEA database (De Stercke 2014) estimated energy efficiencies of end-use machines using the economic status of countries, thereby precluding use in energy-economy studies.</p>
+<p>Researchers in the field wanted to expand SEA to cover all countries, but the spreadsheet approach to SEA was deemed not scalable. A new approach to SEA was needed, one that scaled across all countries for many years without relying on economic data to estimate machine efficiencies.</p>
+<p>To address that need, we created a suite of <code>R</code> packages to support the creation and use of the CL-PFU database. But creating the CL-PFU database involves more than 10 <code>R</code> packages and much input data. With so many <code>R</code> packages involved, a way to streamline the installation of packages was needed, such that a single <code><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages()</a></code> would ensure that all dependencies are available.</p>
+<p>This package (<code>CLPFUDatbase</code>) addresses the need for a simple way to install all dependencies. <code>CLPFUDatbase</code> is metapackage<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;A metapackage with which many &lt;code&gt;R&lt;/code&gt; programmers will be familiar is &lt;a href="https://www.tidyverse.org" class="external-link"&gt;tidyverse&lt;/a&gt;.&lt;/p&gt;'><sup>1</sup></a>, whose dependencies include all packages required to make the CL-PFU database. Installation of <code>CLPFUDatabase</code> triggers installation of all dependencies for the CL-PFU database.</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -70,6 +76,27 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"EnergyEconomyDecoupling/CLPFUDatabase"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Ayres:2003ec" class="csl-entry">
+Ayres, Robert U., Leslie W. Ayres, and Benjamin Warr. 2003. “Exergy, Power, and Work in the US Economy, 1900–1998.” <em>Energy</em> 28 (3): 219–73. <a href="https://doi.org/10.1016/s0360-5442(02)00089-0" class="external-link uri">https://doi.org/10.1016/s0360-5442(02)00089-0</a>.
+</div>
+<div id="ref-Brockway:2014aa" class="csl-entry">
+Brockway, Paul E., John R. Barrett, Timothy J. Foxon, and Julia K. Steinberger. 2014. “Divergence of Trends in US and UK Aggregate Exergy Efficiencies 1960–2010.” <em>Environmental Science &amp; Technology</em> 48: 9874–81. <a href="https://doi.org/10.1021/es501217t" class="external-link uri">https://doi.org/10.1021/es501217t</a>.
+</div>
+<div id="ref-Brockway:2015aa" class="csl-entry">
+Brockway, Paul E., Julia K. Steinberger, John R. Barrett, and Timothy J. Foxon. 2015. “Understanding China’s Past and Future Energy Demand: An Exergy Efficiency and Decomposition Analysis.” <em>Applied Energy</em> 155: 892–903. <a href="https://doi.org/10.1016/j.apenergy.2015.05.082" class="external-link uri">https://doi.org/10.1016/j.apenergy.2015.05.082</a>.
+</div>
+<div id="ref-De-Stercke:2014" class="csl-entry">
+De Stercke, Simon. 2014. “Dynamics of Energy Systems: A Useful Perspective.” Interim Report IR-14-013. Laxenburg, Austria: IIASA.
+</div>
+<div id="ref-Serrenho:2014aa" class="csl-entry">
+Serrenho, André Cabrera, Tânia Sousa, Benjamin Warr, Robert U. Ayres, and Tiago Domingos. 2014. “Decomposition of Useful Work Intensity: The EU (European Union)-15 Countries from 1960 to 2009.” <em>Energy</em> 76 (November): 704–15. <a href="https://doi.org/10.1016/j.energy.2014.08.068" class="external-link uri">https://doi.org/10.1016/j.energy.2014.08.068</a>.
+</div>
+</div>
 </div>
 </div>
 

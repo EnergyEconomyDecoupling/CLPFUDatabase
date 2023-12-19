@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="index.html">CLPFUDatabase</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +51,9 @@
 <div class="section level3">
 <h3 id="pull-request-process">Pull request process<a class="anchor" aria-label="anchor" href="#pull-request-process"></a></h3>
 <ul><li>Fork the package and clone onto your computer.</li>
-<li>Install all development dependencies with <code>devtools::install_dev_deps()</code>, and make sure the package passes R CMD check by running <code>devtools::check()</code>. If R CMD check doesn’t pass cleanly, it’s a good idea to ask for help before continuing.</li>
+<li>Install all development dependencies with <code><a href="https://devtools.r-lib.org/reference/install_deps.html" class="external-link">devtools::install_dev_deps()</a></code>, and make sure the package passes R CMD check by running <code><a href="https://devtools.r-lib.org/reference/check.html" class="external-link">devtools::check()</a></code>. If R CMD check doesn’t pass cleanly, it’s a good idea to ask for help before continuing.</li>
 <li>Create a Git branch for your pull request (PR). We recommend using <code>usethis::pr_init("brief-description-of-change")</code>.</li>
-<li>Make your changes, commit to git, and then create a PR by running <code>usethis::pr_push()</code>. Follow the prompts in your browser. The title of your PR should briefly describe the change. The body of your PR should contain <code>Fixes #issue-number</code>.</li>
+<li>Make your changes, commit to git, and then create a PR by running <code><a href="https://usethis.r-lib.org/reference/pull-requests.html" class="external-link">usethis::pr_push()</a></code>. Follow the prompts in your browser. The title of your PR should briefly describe the change. The body of your PR should contain <code>Fixes #issue-number</code>.</li>
 <li>For user-facing changes, add a bullet to the top of <code>NEWS.md</code> (i.e., beneath “which always resolves to the latest release.”).</li>
 </ul></div>
 <div class="section level3">

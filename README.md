@@ -73,7 +73,7 @@ GitHub with the following code.
 # Eliminate Host column
 # Change order of columns
 # Transpose 
-# Convert to code
+# Convert to code with paste0
 # cat the result
 ```
 

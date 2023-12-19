@@ -120,13 +120,13 @@ knitr::kable(dependency_table)
 Packages hosted on `CRAN` can be updated in the "Packages" tab of RStudio.
 Users will need to occasionally update packages hosted in GitHub with the following code.
 
-```{r}
+```{r, results="asis"}
 # Get the table
 # Filter to GitHub only
 # Eliminate Host column
 # Change order of columns
 # Transpose 
-# Convert to code
+# Convert to code with paste0
 # cat the result
 ```
 

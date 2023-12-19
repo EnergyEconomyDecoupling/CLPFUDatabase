@@ -1,6 +1,6 @@
 Package: CLPFUDatabase
 Title: Easily Install and Load Packages to Construct the CL-PFU Database
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person("Matthew", "Heun", , "matthew.heun@me.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7438-214X"))
@@ -11,20 +11,33 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Suggests: 
-    spelling
 Language: en-US
 Config/testthat/edition: 3
 Imports:
-  matsbyname (>=  0.6.7),
-  matsindf (>= 0.4.6),
-  RCLabels (>= 0.1.8)
+  RCLabels, 
+  matsbyname,
+  matsindf,
+  MKHthemes,
+  MWTools, 
+  IEATools, 
+  Recca,
+  PFUSetup,
+  PFUPipelineTools,
+  PFUDatabase,
+  PFUAggDatabase
+Suggests: 
+  devtools,
+  magrittr,
+  spelling,
+  testthat (>= 3.0.0), 
+  yaml
 Remotes:
-  EnergyEconomyDecoupling/MWTools,
-  EnergyEconomyDecoupling/PFUAggDatabase,
-  EnergyEconomyDecoupling/PFUDatabase,
-  EnergyEconomyDecoupling/PFUPipelineTools,
-  EnergyEconomyDecoupling/PFUSetup
-  MatthewHeun/IEATools,
-  MatthewHeun/Recca
+  github::MatthewHeun/MKHthemes,
+  github::EnergyEconomyDecoupling/MWTools,
+  github::MatthewHeun/IEATools,
+  github::MatthewHeun/Recca,
+  github::EnergyEconomyDecoupling/PFUSetup,
+  github::EnergyEconomyDecoupling/PFUPipelineTools,
+  github::EnergyEconomyDecoupling/PFUDatabase,
+  github::EnergyEconomyDecoupling/PFUAggDatabase
 URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

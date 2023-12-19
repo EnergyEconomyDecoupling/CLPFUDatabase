@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: references.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit Readme.Rmd. -->
@@ -14,7 +15,10 @@ knitr::opts_chunk$set(
 ```
 
 
-# CLPFUDatabase
+<!-- Define some macros for later use -->
+[link-iea]:              https://www.iea.org
+[link-ieaeweb]:          https://www.iea.org/data-and-statistics/data-product/world-energy-balances
+
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml)
@@ -22,9 +26,52 @@ knitr::opts_chunk$set(
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-`CLPFUDatabase` is a metapackage[^1] that enables 
-quick and convenient installation of all dependencies
-for constructing the CL-PFU database.
+
+# CLPFUDatabase
+
+## Statement of need
+
+Historically, societal exergy analysis (SEA) practitioners have
+analyzed the energy conversion chains (ECCs)
+of individual countries using linked spreadsheets,
+often starting with primary- and final-stage data 
+from the [International Energy Agency][link-iea]'s (IEA's)
+[extended world energy balances][link-ieaeweb] (EWEBs)
+[@Ayres:2003ec; @Serrenho:2014aa; @Brockway:2014aa; @Brockway:2015aa]. 
+Data were stored in varying and inconsistent formats.
+An early SEA database [@De-Stercke:2014]
+estimated energy efficiencies 
+of end-use machines using the economic status of countries,
+thereby precluding use in energy-economy studies.
+
+Researchers in the field
+wanted to expand SEA to cover all countries, but
+the spreadsheet approach to SEA was
+deemed not scalable.
+A new approach to SEA was needed, 
+one that scaled across all countries 
+for many years without relying on economic data
+to estimate machine efficiencies. 
+
+To address that need,
+we created a suite of `R` packages 
+to support the creation and use of the CL-PFU database.
+But creating the CL-PFU database involves 
+several `R` packages and
+much input data.
+A way to streamline the installation of packages was needed,
+such that a single `install.packages()` call would
+ensure that all dependencies are available.
+
+This package (`CLPFUDatbase`) addresses the need for a simple 
+way to install all dependencies.
+`CLPFUDatbase` is 
+metapackage^[[tidyverse](https://www.tidyverse.org) is another metapackage
+             with which many `R` programmers are familiar.], 
+whose dependencies include all packages required to make
+the CL-PFU database. 
+Installation of `CLPFUDatabase` triggers 
+installation of all dependencies for the CL-PFU database.
 
 
 ## Installation
@@ -32,11 +79,91 @@ for constructing the CL-PFU database.
 You can install `CLPFUDatabase` and all its dependencies
 from [GitHub](https://github.com/) with:
 
-``` r
+```{r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
 ```
 
 
-[^1]: A metapackage with which many `R` programmers will be familiar
-      is [tidyverse](https://www.tidyverse.org).
+## Dependencies
+
+The packages in the table below are dependencies of `CLPFUDatabase`.
+
+```{r, echo=FALSE, results='asis'}
+description <- yaml::read_yaml("DESCRIPTION")
+pkg_table <- description |> 
+  magrittr::extract2("Imports") |> 
+  strsplit(split = ", ") |> 
+  data.frame() |> 
+  magrittr::set_names("Package name")
+
+# Create a data frame of remotes
+remotes <- description |> 
+  magrittr::extract2("Remotes") |> 
+  strsplit(split = ", ") |> 
+  lapply(FUN = strsplit, split = "::|/") |> 
+  unlist(recursive = FALSE) |> 
+  lapply(FUN = as.list) |> 
+  purrr::transpose() |> 
+  magrittr::set_names(c("Host", "Organization", "Package name")) |> 
+  lapply(FUN = unlist) |> 
+  tibble::as_tibble() |> 
+  dplyr::mutate(
+    Host = dplyr::case_when(
+      Host == "github" ~ "GitHub", 
+      TRUE ~ Host
+    )
+  )
+
+# Join the two data frames
+dependency_table <- dplyr::left_join(pkg_table, remotes, by = "Package name") |> 
+  dplyr::mutate(
+    Host = dplyr::case_when(
+      is.na(Host) ~ "CRAN", 
+      TRUE ~ Host
+    )
+  )
+
+# Display the table as markdown
+knitr::kable(dependency_table)
+```
+
+Packages hosted on `CRAN` can be updated in the "Packages" tab of RStudio.
+Users will need to occasionally update packages hosted elsewhere
+by using the commands in the table below.
+
+```{r, echo=FALSE, results="asis"}
+# Get the table
+commands <- dependency_table |> 
+  # Filter to GitHub only
+  dplyr::filter(Host != "CRAN") |> 
+  # Eliminate Host column
+  dplyr::mutate(
+    Host= NULL
+  ) |> 
+  # Change order of columns
+  dplyr::select(Organization, `Package name`) |> 
+  # Transpose 
+  as.list() |> 
+  unname() |> 
+  purrr::transpose() |> 
+  # Convert to code with paste0
+  sapply(FUN = paste0, collapse = "/") 
+
+commands_list <- paste0("`devtools::install_github(", commands, ")`")
+
+for (this_command in commands_list) {
+  cat("\n", this_command, "\n")
+
+}
+```
+
+
+```{r, eval=FALSE}
+
+```
+
+
+
+
+## References

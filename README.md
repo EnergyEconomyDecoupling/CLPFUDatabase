@@ -45,9 +45,19 @@ dependencies include all packages required to make the CL-PFU database.
 Installation of `CLPFUDatabase` triggers installation of all
 dependencies for the CL-PFU database.
 
+## Installation
+
+You can install `CLPFUDatabase` and all its dependencies from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
+```
+
 ## Dependencies
 
-The following packages are dependencies of `CLPFUDatabase`:
+The packages in the table below are dependencies of `CLPFUDatabase`.
 
 | Package name     | Host   | Organization            |
 |:-----------------|:-------|:------------------------|
@@ -64,37 +74,24 @@ The following packages are dependencies of `CLPFUDatabase`:
 | PFUAggDatabase   | GitHub | EnergyEconomyDecoupling |
 
 Packages hosted on `CRAN` can be updated in the “Packages” tab of
-RStudio. Users will need to occasionally update packages hosted in
-GitHub with the following code.
+RStudio. Users will need to occasionally update packages hosted
+elsewhere by using the commands in the table below.
 
-``` r
-# Get the table
-# Filter to GitHub only
-# Eliminate Host column
-# Change order of columns
-# Transpose 
-# Convert to code with paste0
-# cat the result
-```
+`devtools::install_github(MatthewHeun/MKHthemes)`
 
-``` r
-remote_pkgs <- description |> 
-  magrittr::extract("Remotes")
-```
+`devtools::install_github(EnergyEconomyDecoupling/MWTools)`
 
-and may need to be updated occasionally by the following commands.
+`devtools::install_github(MatthewHeun/IEATools)`
 
-## Installation
+`devtools::install_github(MatthewHeun/Recca)`
 
-You can install `CLPFUDatabase` and all its dependencies from
-[GitHub](https://github.com/) with:
+`devtools::install_github(EnergyEconomyDecoupling/PFUSetup)`
 
-``` r
-# install.packages("devtools")
-devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
-```
+`devtools::install_github(EnergyEconomyDecoupling/PFUPipelineTools)`
 
-## Updates
+`devtools::install_github(EnergyEconomyDecoupling/PFUDatabase)`
+
+`devtools::install_github(EnergyEconomyDecoupling/PFUAggDatabase)`
 
 ## References
 

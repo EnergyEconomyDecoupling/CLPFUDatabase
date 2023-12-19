@@ -74,9 +74,20 @@ Installation of `CLPFUDatabase` triggers
 installation of all dependencies for the CL-PFU database.
 
 
+## Installation
+
+You can install `CLPFUDatabase` and all its dependencies
+from [GitHub](https://github.com/) with:
+
+```{r, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
+```
+
+
 ## Dependencies
 
-The following packages are dependencies of `CLPFUDatabase`:
+The packages in the table below are dependencies of `CLPFUDatabase`.
 
 ```{r, echo=FALSE, results='asis'}
 description <- yaml::read_yaml("DESCRIPTION")
@@ -118,44 +129,40 @@ knitr::kable(dependency_table)
 ```
 
 Packages hosted on `CRAN` can be updated in the "Packages" tab of RStudio.
-Users will need to occasionally update packages hosted in GitHub with the following code.
+Users will need to occasionally update packages hosted elsewhere
+by using the commands in the table below.
 
-```{r, results="asis"}
+```{r, echo=FALSE, results="asis"}
 # Get the table
-# Filter to GitHub only
-# Eliminate Host column
-# Change order of columns
-# Transpose 
-# Convert to code with paste0
-# cat the result
+commands <- dependency_table |> 
+  # Filter to GitHub only
+  dplyr::filter(Host != "CRAN") |> 
+  # Eliminate Host column
+  dplyr::mutate(
+    Host= NULL
+  ) |> 
+  # Change order of columns
+  dplyr::select(Organization, `Package name`) |> 
+  # Transpose 
+  as.list() |> 
+  unname() |> 
+  purrr::transpose() |> 
+  # Convert to code with paste0
+  sapply(FUN = paste0, collapse = "/") 
+
+commands_list <- paste0("`devtools::install_github(", commands, ")`")
+
+for (this_command in commands_list) {
+  cat("\n", this_command, "\n")
+
+}
 ```
 
-
-
-```{r}
-remote_pkgs <- description |> 
-  magrittr::extract("Remotes")
-
-```
-
-and may need to be updated occasionally
-by the following commands. 
-
-
-
-
-## Installation
-
-You can install `CLPFUDatabase` and all its dependencies
-from [GitHub](https://github.com/) with:
 
 ```{r, eval=FALSE}
-# install.packages("devtools")
-devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase")
+
 ```
 
-
-## Updates
 
 
 

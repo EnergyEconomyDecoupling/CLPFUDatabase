@@ -73,9 +73,9 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 | PFUDatabase      | GitHub | EnergyEconomyDecoupling |
 | PFUAggDatabase   | GitHub | EnergyEconomyDecoupling |
 
-Packages hosted on `CRAN` can be updated in the “Packages” tab of
-RStudio. Users will need to occasionally update packages hosted
-elsewhere by using the commands in the table below.
+Packages hosted on CRAN can be updated in the “Packages” tab of RStudio.
+Users will need to occasionally update packages hosted elsewhere by
+using the commands in the table below.
 
 `devtools::install_github(MatthewHeun/MKHthemes)`
 

@@ -2,8 +2,8 @@ test_that("Installation works as expected", {
   # First, remove all dependent packages
   remove.packages(c("CLPFUDatabase",
                     "MWTools",
-                    "PFUAggDatabase",
-                    "PFUDatabase",
+                    "PFUAggPipeline",
+                    "PFUPipeline",
                     "PFUPipelineTools",
                     "PFUSetup",
                     "IEATools",
@@ -17,8 +17,8 @@ test_that("Installation works as expected", {
   # Make sure we can library everything without an error
   expect_no_error(library(CLPFUDatabase))
   expect_no_error(library(MWTools))
-  expect_no_error(library(PFUAggDatabase))
-  expect_no_error(library(PFUDatabase))
+  expect_no_error(library(PFUAggPipeline))
+  expect_no_error(library(PFUPipeline))
   expect_no_error(library(PFUPipelineTools))
   expect_no_error(library(PFUSetup))
   expect_no_error(library(IEATools))

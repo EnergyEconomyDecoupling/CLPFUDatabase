@@ -23,8 +23,8 @@ Imports:
   Recca,
   PFUSetup,
   PFUPipelineTools,
-  PFUDatabase,
-  PFUAggDatabase
+  PFUPipeline,
+  PFUAggPipeline
 Suggests: 
   devtools,
   magrittr,
@@ -38,6 +38,6 @@ Remotes:
   github::MatthewHeun/Recca,
   github::EnergyEconomyDecoupling/PFUSetup,
   github::EnergyEconomyDecoupling/PFUPipelineTools,
-  github::EnergyEconomyDecoupling/PFUDatabase,
-  github::EnergyEconomyDecoupling/PFUAggDatabase
+  github::EnergyEconomyDecoupling/PFUPipeline,
+  github::EnergyEconomyDecoupling/PFUAggPipeline
 URL: https://energyeconomydecoupling.github.io/CLPFUDatabase/

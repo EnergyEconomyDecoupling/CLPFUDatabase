@@ -128,7 +128,7 @@ dependency_table <- dplyr::left_join(pkg_table, remotes, by = "Package name") |>
 knitr::kable(dependency_table)
 ```
 
-Packages hosted on `CRAN` can be updated in the "Packages" tab of RStudio.
+Packages hosted on CRAN can be updated in the "Packages" tab of RStudio.
 Users will need to occasionally update packages hosted elsewhere
 by using the commands in the table below.
 

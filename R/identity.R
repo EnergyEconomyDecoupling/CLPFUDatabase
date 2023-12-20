@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' identity(5)
+#' identity(42)
 identity <- function(x) {
   x
 }

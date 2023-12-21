@@ -70,12 +70,12 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 | Recca            | GitHub | MatthewHeun             |
 | PFUSetup         | GitHub | EnergyEconomyDecoupling |
 | PFUPipelineTools | GitHub | EnergyEconomyDecoupling |
-| PFUDatabase      | GitHub | EnergyEconomyDecoupling |
-| PFUAggDatabase   | GitHub | EnergyEconomyDecoupling |
+| PFUPipeline      | GitHub | EnergyEconomyDecoupling |
+| PFUAggPipeline   | GitHub | EnergyEconomyDecoupling |
 
-Packages hosted on `CRAN` can be updated in the “Packages” tab of
-RStudio. Users will need to occasionally update packages hosted
-elsewhere by using the commands in the table below.
+Packages hosted on CRAN can be updated in the “Packages” tab of RStudio.
+Users will need to occasionally update packages hosted elsewhere by
+using the commands in the table below.
 
 `devtools::install_github(MatthewHeun/MKHthemes)`
 
@@ -89,9 +89,9 @@ elsewhere by using the commands in the table below.
 
 `devtools::install_github(EnergyEconomyDecoupling/PFUPipelineTools)`
 
-`devtools::install_github(EnergyEconomyDecoupling/PFUDatabase)`
+`devtools::install_github(EnergyEconomyDecoupling/PFUPipeline)`
 
-`devtools::install_github(EnergyEconomyDecoupling/PFUAggDatabase)`
+`devtools::install_github(EnergyEconomyDecoupling/PFUAggPipeline)`
 
 ## References
 

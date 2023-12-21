@@ -15,8 +15,8 @@ Language: en-US
 Config/testthat/edition: 3
 Imports:
   FAOSTAT, 
-  Rilostat, 
   future.callr,
+  Rilostat, 
   RCLabels, 
   matsbyname,
   matsindf,

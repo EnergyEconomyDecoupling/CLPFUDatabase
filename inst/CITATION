@@ -8,11 +8,11 @@ bibentry(
                        role = c("aut", "cre"),
                        comment = c(ORCID = "0000-0002-7438-214X")),
   year        = "2023",
-  note        = "R package version 0.1.4",
+  note        = "R package version 0.1.5",
   url         = "https://doi.org/10.5281/zenodo.TBD",
   doi         = "10.5281/zenodo.10359832",
   textVersion = paste("Matthew Kuperus Heun (2023).",
                       "{CLPFUDatabase}: Easily Install and Load Packages to Construct the CL-PFU Database",
-                      "R package version 0.1.4",
+                      "R package version 0.1.5",
                       "https://doi.org/10.5281/zenodo.10359832")
 )

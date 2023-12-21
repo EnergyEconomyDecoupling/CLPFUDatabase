@@ -7,7 +7,7 @@ Cite all releases with doi 10.5281/zenodo.10359832,
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.4 (2023-12-21)
+# CLPFUDatabase 0.1.4 (2023-12-21) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10418947.svg)](https://doi.org/10.5281/zenodo.10418947)
 
 * Add `FAOSTAT`, `Rilostat`, and `future.callr` to dependencies,
   further facilitating automatic installation of all packages.

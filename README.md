@@ -78,7 +78,7 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 
 Packages hosted on CRAN can be updated in the “Packages” tab of RStudio.
 Users will need to update occasionally packages hosted elsewhere by
-using the commands in the table below.
+using the commands below.
 
 `devtools::install_github(MatthewHeun/MKHthemes)`
 

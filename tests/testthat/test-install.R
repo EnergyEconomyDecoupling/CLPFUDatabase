@@ -17,7 +17,8 @@ test_that("Installation works as expected", {
                     "PFUSetup",
                     "PFUPipelineTools",
                     "PFUPipeline",
-                    "PFUAggPipeline"))
+                    "PFUAggPipeline",
+                    "CLPFUDatabase"))
   # Install from github
   expect_no_error(devtools::install_github("EnergyEconomyDecoupling/CLPFUDatabase"))
   # Make sure we can library everything without an error

@@ -7,7 +7,17 @@ Cite all releases with doi 10.5281/zenodo.10359832,
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.4 (2023-12-21)
+# CLPFUDatabase 0.1.5 (2023-12-21)
+
+* Now skipping the installation test on CI platforms.
+  A GITHUB_PAT is not available on the CI platforms.
+  Without GITHUB_PAT set in .Renviron,
+  installation fails due to exceeding GitHub API limits.
+  Now the package passes on GitHub actions, 
+  so the badge works!
+
+
+# CLPFUDatabase 0.1.4 (2023-12-21) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10418947.svg)](https://doi.org/10.5281/zenodo.10418947)
 
 * Add `FAOSTAT`, `Rilostat`, and `future.callr` to dependencies,
   further facilitating automatic installation of all packages.

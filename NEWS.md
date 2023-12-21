@@ -7,7 +7,7 @@ Cite all releases with doi 10.5281/zenodo.10359832,
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.6 (2023-12-21)
+# CLPFUDatabase 0.1.6 (2023-12-21) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10419552.svg)](https://doi.org/10.5281/zenodo.10419552)
 
 * Fixed a typo in the README.md file.
   `CLPFUDatbase` --> `CLPFUDatabase`

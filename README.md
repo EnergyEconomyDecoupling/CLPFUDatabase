@@ -61,6 +61,9 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 
 | Package name     | Host   | Organization            |
 |:-----------------|:-------|:------------------------|
+| FAOSTAT          | CRAN   | NA                      |
+| future.callr     | CRAN   | NA                      |
+| Rilostat         | CRAN   | NA                      |
 | RCLabels         | CRAN   | NA                      |
 | matsbyname       | CRAN   | NA                      |
 | matsindf         | CRAN   | NA                      |
@@ -74,7 +77,7 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 | PFUAggPipeline   | GitHub | EnergyEconomyDecoupling |
 
 Packages hosted on CRAN can be updated in the “Packages” tab of RStudio.
-Users will need to occasionally update packages hosted elsewhere by
+Users will need to update occasionally packages hosted elsewhere by
 using the commands in the table below.
 
 `devtools::install_github(MatthewHeun/MKHthemes)`

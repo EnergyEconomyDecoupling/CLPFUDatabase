@@ -7,7 +7,13 @@ Cite all releases with doi 10.5281/zenodo.10359832,
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.3 (2023-12-20)
+# CLPFUDatabase 0.1.4 (2023-12-21)
+
+* Add `FAOSTAT`, `Rilostat`, and `future.callr` to dependencies,
+  further facilitating automatic installation of all packages.
+
+
+# CLPFUDatabase 0.1.3 (2023-12-20) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10416583.svg)](https://doi.org/10.5281/zenodo.10416583)
 
 * Respond to package name changes for
     - `PFUDatabase` --> `PFUPipeline`

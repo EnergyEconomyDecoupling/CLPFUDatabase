@@ -39,8 +39,8 @@ streamline the installation of packages was needed, such that a single
 `install.packages()` call would ensure that all dependencies are
 available.
 
-This package (`CLPFUDatbase`) addresses the need for a simple way to
-install all dependencies. `CLPFUDatbase` is metapackage[^1], whose
+This package (`CLPFUDatabase`) addresses the need for a simple way to
+install all dependencies. `CLPFUDatabase` is metapackage[^1], whose
 dependencies include all packages required to make the CL-PFU database.
 Installation of `CLPFUDatabase` triggers installation of all
 dependencies for the CL-PFU database.

@@ -129,7 +129,7 @@ knitr::kable(dependency_table)
 ```
 
 Packages hosted on CRAN can be updated in the "Packages" tab of RStudio.
-Users will need to occasionally update packages hosted elsewhere
+Users will need to update occasionally packages hosted elsewhere
 by using the commands in the table below.
 
 ```{r, echo=FALSE, results="asis"}
@@ -157,12 +157,6 @@ for (this_command in commands_list) {
 
 }
 ```
-
-
-```{r, eval=FALSE}
-
-```
-
 
 
 

@@ -63,9 +63,9 @@ A way to streamline the installation of packages was needed,
 such that a single `install.packages()` call would
 ensure that all dependencies are available.
 
-This package (`CLPFUDatbase`) addresses the need for a simple 
+This package (`CLPFUDatabase`) addresses the need for a simple 
 way to install all dependencies.
-`CLPFUDatbase` is 
+`CLPFUDatabase` is 
 metapackage^[[tidyverse](https://www.tidyverse.org) is another metapackage
              with which many `R` programmers are familiar.], 
 whose dependencies include all packages required to make

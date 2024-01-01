@@ -3,7 +3,7 @@ title: "Release notes for `CLPFUDatabase`"
 output: html_document
 ---
 
-Cite all releases with doi 10.5281/zenodo.10359832, 
+Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zenodo.10359832), 
 which always resolves to the latest release.
 
 

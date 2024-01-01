@@ -24,6 +24,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/CLPFUDatabase)](https://CRAN.R-project.org/package=CLPFUDatabase)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10359832.svg)](https://doi.org/10.5281/zenodo.10359832)
 <!-- badges: end -->
 
 
@@ -63,9 +64,9 @@ A way to streamline the installation of packages was needed,
 such that a single `install.packages()` call would
 ensure that all dependencies are available.
 
-This package (`CLPFUDatbase`) addresses the need for a simple 
+This package (`CLPFUDatabase`) addresses the need for a simple 
 way to install all dependencies.
-`CLPFUDatbase` is 
+`CLPFUDatabase` is 
 metapackage^[[tidyverse](https://www.tidyverse.org) is another metapackage
              with which many `R` programmers are familiar.], 
 whose dependencies include all packages required to make
@@ -129,8 +130,8 @@ knitr::kable(dependency_table)
 ```
 
 Packages hosted on CRAN can be updated in the "Packages" tab of RStudio.
-Users will need to occasionally update packages hosted elsewhere
-by using the commands in the table below.
+Users will need to update occasionally packages hosted elsewhere
+by using the commands below.
 
 ```{r, echo=FALSE, results="asis"}
 # Get the table
@@ -157,12 +158,6 @@ for (this_command in commands_list) {
 
 }
 ```
-
-
-```{r, eval=FALSE}
-
-```
-
 
 
 

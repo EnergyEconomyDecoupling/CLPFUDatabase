@@ -30,7 +30,7 @@
     
     <a class="navbar-brand me-2" href="index.html">CLPFUDatabase</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.6</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@
 <p>Historically, societal exergy analysis (SEA) practitioners have analyzed the energy conversion chains (ECCs) of individual countries using linked spreadsheets, often starting with primary- and final-stage data from the <a href="https://www.iea.org" class="external-link">International Energy Agency</a>’s (IEA’s) <a href="https://www.iea.org/data-and-statistics/data-product/world-energy-balances" class="external-link">extended world energy balances</a> (EWEBs) (Ayres, Ayres, and Warr 2003; Serrenho et al. 2014; Brockway et al. 2014, 2015). Data were stored in varying and inconsistent formats. An early SEA database (De Stercke 2014) estimated energy efficiencies of end-use machines using the economic status of countries, thereby precluding use in energy-economy studies.</p>
 <p>Researchers in the field wanted to expand SEA to cover all countries, but the spreadsheet approach to SEA was deemed not scalable. A new approach to SEA was needed, one that scaled across all countries for many years without relying on economic data to estimate machine efficiencies.</p>
 <p>To address that need, we created a suite of <code>R</code> packages to support the creation and use of the CL-PFU database. But creating the CL-PFU database involves several <code>R</code> packages and much input data. A way to streamline the installation of packages was needed, such that a single <code><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages()</a></code> call would ensure that all dependencies are available.</p>
-<p>This package (<code>CLPFUDatbase</code>) addresses the need for a simple way to install all dependencies. <code>CLPFUDatbase</code> is metapackage<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://www.tidyverse.org" class="external-link"&gt;tidyverse&lt;/a&gt; is another metapackage with which many &lt;code&gt;R&lt;/code&gt; programmers are familiar.&lt;/p&gt;'><sup>1</sup></a>, whose dependencies include all packages required to make the CL-PFU database. Installation of <code>CLPFUDatabase</code> triggers installation of all dependencies for the CL-PFU database.</p>
+<p>This package (<code>CLPFUDatabase</code>) addresses the need for a simple way to install all dependencies. <code>CLPFUDatabase</code> is metapackage<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;&lt;a href="https://www.tidyverse.org" class="external-link"&gt;tidyverse&lt;/a&gt; is another metapackage with which many &lt;code&gt;R&lt;/code&gt; programmers are familiar.&lt;/p&gt;'><sup>1</sup></a>, whose dependencies include all packages required to make the CL-PFU database. Installation of <code>CLPFUDatabase</code> triggers installation of all dependencies for the CL-PFU database.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -89,63 +89,78 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
+<td align="left">FAOSTAT</td>
+<td align="left">CRAN</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">future.callr</td>
+<td align="left">CRAN</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">Rilostat</td>
+<td align="left">CRAN</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
 <td align="left">RCLabels</td>
 <td align="left">CRAN</td>
 <td align="left">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">matsbyname</td>
 <td align="left">CRAN</td>
 <td align="left">NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">matsindf</td>
 <td align="left">CRAN</td>
 <td align="left">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">MKHthemes</td>
 <td align="left">GitHub</td>
 <td align="left">MatthewHeun</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">MWTools</td>
 <td align="left">GitHub</td>
 <td align="left">EnergyEconomyDecoupling</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">IEATools</td>
 <td align="left">GitHub</td>
 <td align="left">MatthewHeun</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Recca</td>
 <td align="left">GitHub</td>
 <td align="left">MatthewHeun</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">PFUSetup</td>
 <td align="left">GitHub</td>
 <td align="left">EnergyEconomyDecoupling</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">PFUPipelineTools</td>
 <td align="left">GitHub</td>
 <td align="left">EnergyEconomyDecoupling</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">PFUPipeline</td>
 <td align="left">GitHub</td>
 <td align="left">EnergyEconomyDecoupling</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">PFUAggPipeline</td>
 <td align="left">GitHub</td>
 <td align="left">EnergyEconomyDecoupling</td>
 </tr>
 </tbody>
 </table>
-<p>Packages hosted on CRAN can be updated in the “Packages” tab of RStudio. Users will need to occasionally update packages hosted elsewhere by using the commands in the table below.</p>
+<p>Packages hosted on CRAN can be updated in the “Packages” tab of RStudio. Users will need to update occasionally packages hosted elsewhere by using the commands below.</p>
 <p><code>devtools::install_github(MatthewHeun/MKHthemes)</code></p>
 <p><code>devtools::install_github(EnergyEconomyDecoupling/MWTools)</code></p>
 <p><code>devtools::install_github(MatthewHeun/IEATools)</code></p>

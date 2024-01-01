@@ -8,6 +8,7 @@
 status](https://www.r-pkg.org/badges/version/CLPFUDatabase)](https://CRAN.R-project.org/package=CLPFUDatabase)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10359832.svg)](https://doi.org/10.5281/zenodo.10359832)
 <!-- badges: end -->
 
 # CLPFUDatabase
@@ -39,8 +40,8 @@ streamline the installation of packages was needed, such that a single
 `install.packages()` call would ensure that all dependencies are
 available.
 
-This package (`CLPFUDatbase`) addresses the need for a simple way to
-install all dependencies. `CLPFUDatbase` is metapackage[^1], whose
+This package (`CLPFUDatabase`) addresses the need for a simple way to
+install all dependencies. `CLPFUDatabase` is metapackage[^1], whose
 dependencies include all packages required to make the CL-PFU database.
 Installation of `CLPFUDatabase` triggers installation of all
 dependencies for the CL-PFU database.
@@ -61,6 +62,9 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 
 | Package name     | Host   | Organization            |
 |:-----------------|:-------|:------------------------|
+| FAOSTAT          | CRAN   | NA                      |
+| future.callr     | CRAN   | NA                      |
+| Rilostat         | CRAN   | NA                      |
 | RCLabels         | CRAN   | NA                      |
 | matsbyname       | CRAN   | NA                      |
 | matsindf         | CRAN   | NA                      |
@@ -74,8 +78,8 @@ The packages in the table below are dependencies of `CLPFUDatabase`.
 | PFUAggPipeline   | GitHub | EnergyEconomyDecoupling |
 
 Packages hosted on CRAN can be updated in the “Packages” tab of RStudio.
-Users will need to occasionally update packages hosted elsewhere by
-using the commands in the table below.
+Users will need to update occasionally packages hosted elsewhere by
+using the commands below.
 
 `devtools::install_github(MatthewHeun/MKHthemes)`
 

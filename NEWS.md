@@ -7,6 +7,7 @@ Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zen
 which always resolves to the latest release.
 
 
+* Add ORCIDs for all authors.
 * Add Zeke and Emmanuel as authors, as this is a metapackage
   and they are authors on several imported packages.
 * Add CITATION.cff file for Zenodo.

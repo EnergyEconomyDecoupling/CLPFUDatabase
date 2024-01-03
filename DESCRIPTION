@@ -1,5 +1,5 @@
 Package: CLPFUDatabase
-Title: Easily Install and Load Packages to Construct the CL-PFU Database
+Title: CLPFUDatabase: A suite of R packages for energy conversion chain analysis
 Version: 0.1.6
 Authors@R: 
     c(person(given = "Matthew Kuperus", family = "Heun", email = "matthew.heun@me.com",

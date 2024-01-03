@@ -7,6 +7,11 @@ Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zen
 which always resolves to the latest release.
 
 
+* Add Zeke and Emmanuel as authors, as this is a metapackage
+  and they are authors on several imported packages.
+* Add CITATION.cff file for Zenodo.
+
+
 # CLPFUDatabase 0.1.6 (2023-12-21) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10419552.svg)](https://doi.org/10.5281/zenodo.10419552)
 
 * Fixed a typo in the README.md file.

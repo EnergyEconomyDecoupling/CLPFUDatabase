@@ -7,7 +7,7 @@ Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zen
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.8 (2024-01-03)
+# CLPFUDatabase 0.1.8 (2024-01-03) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10456048.svg)](https://doi.org/10.5281/zenodo.10456048)
 
 * Remove a ":" in the title field of the CITATION.cff file.
   Apparently, that character is illegal and

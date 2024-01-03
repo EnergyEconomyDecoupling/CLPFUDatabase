@@ -8,3 +8,4 @@
 ^pkgdown$
 ^data-raw$
 ^references.bib$
+^CITATION.cff$

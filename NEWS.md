@@ -8,7 +8,8 @@ which always resolves to the latest release.
 
 
 * Remove a ":" in the title field of the CITATION.cff file.
-  Apparently, that character is illegal.
+  Apparently, that character is illegal and
+  prevents Zenodo from generating a DOI.
   Who knew?
 
 

@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: CLPFUDatabase: A suite of R packages for energy conversion chain analysis
+title: CLPFUDatabase A suite of R packages for energy conversion chain analysis
 message: >-
   If you use this software, please cite it using the
   metadata from this file.

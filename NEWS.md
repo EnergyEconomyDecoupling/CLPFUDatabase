@@ -7,6 +7,11 @@ Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zen
 which always resolves to the latest release.
 
 
+* Remove a ":" in the title field of the CITATION.cff file.
+  Apparently, that character is illegal.
+  Who knew?
+
+
 # CLPFUDatabase 0.1.7 (2024-01-03)
 
 * Metadata for this package now matches the title of the JOSS paper.

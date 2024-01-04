@@ -1,6 +1,6 @@
 Package: CLPFUDatabase
 Title: CLPFUDatabase: A suite of R packages for energy conversion chain analysis
-Version: 0.1.8
+Version: 0.1.9
 Authors@R: 
     c(person(given = "Matthew Kuperus", family = "Heun", email = "matthew.heun@me.com",
              role = c("aut", "cre"),

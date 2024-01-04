@@ -13,16 +13,16 @@ authors:
     email: matthew.heun@me.com
     affiliation: Calvin University
     orcid: 'https://orcid.org/0000-0002-7438-214X'
-  - given-names: Emmanuel
-    family-names: Aramendia
-    email: e.aramendia@leeds.ac.uk
-    affiliation: University of Leeds
-    orcid: 'https://orcid.org/0000-0002-5964-6776'
   - given-names: Zeke
     family-names: Marshall
     email: Z.Marshall@leeds.ac.uk
     affiliation: University of Leeds
     orcid: 'https://orcid.org/0000-0001-9260-7827'
+  - given-names: Emmanuel
+    family-names: Aramendia
+    email: e.aramendia@leeds.ac.uk
+    affiliation: University of Leeds
+    orcid: 'https://orcid.org/0000-0002-5964-6776'
 identifiers:
   - type: doi
     value: 10.5281/zenodo.10359832

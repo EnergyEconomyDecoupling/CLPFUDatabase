@@ -7,7 +7,7 @@ Cite all releases with doi [10.5281/zenodo.10359832](https://doi.org/10.5281/zen
 which always resolves to the latest release.
 
 
-# CLPFUDatabase 0.1.9 (2024-01-04)
+# CLPFUDatabase 0.1.9 (2024-01-04) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10458774.svg)](https://doi.org/10.5281/zenodo.10458774)
 
 * Change order of authors in CITATION.cff to match order of authors on JOSS paper.
 * No new tests.

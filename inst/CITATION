@@ -13,11 +13,11 @@ bibentry(
                          role = "aut",
                          comment = c(ORCID = "0000-0002-5964-6776"))),
   year        = "2024",
-  note        = "R package version 0.1.8",
+  note        = "R package version 0.1.9",
   url         = "https://doi.org/10.5281/zenodo.10359832",
   doi         = "10.5281/zenodo.10359832",
   textVersion = paste("Matthew Kuperus Heun, Zeke Marshall, and Emmanuel Aramendia (2024).",
                       "CLPFUDatabase: A suite of R packages for energy conversion chain analysis.",
-                      "R package version 0.1.8.",
+                      "R package version 0.1.9.",
                       "https://doi.org/10.5281/zenodo.10359832")
 )

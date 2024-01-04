@@ -21,8 +21,8 @@ knitr::opts_chunk$set(
 
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/CLPFUDatabase)](https://CRAN.R-project.org/package=CLPFUDatabase)
+[![R-CMD-check](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EnergyEconomyDecoupling/CLPFUDatabase/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10359832.svg)](https://doi.org/10.5281/zenodo.10359832)
 <!-- badges: end -->

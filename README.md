@@ -9,6 +9,7 @@ status](https://www.r-pkg.org/badges/version/CLPFUDatabase)](https://CRAN.R-proj
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10359832.svg)](https://doi.org/10.5281/zenodo.10359832)
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.06057/status.svg)](https://doi.org/10.21105/joss.06057)
 <!-- badges: end -->
 
 # CLPFUDatabase
